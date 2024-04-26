@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+::-webkit-scrollbar{
+    width: 2px;
+}
+::-webkit-scrollbar-thumb{
+    width: 2px;
+    background: rgb(25, 192, 238);
+}
+.home{
+    display: grid;
+    grid-template-columns: repeat(3,calc(100vw/3));
+
+}
