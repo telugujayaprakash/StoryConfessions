@@ -14,7 +14,7 @@
     },
     {
       "src": "banner.webp",
-      "type": "image/png",
+      "type": "image/webp",
       "sizes": "512x512"
     }
   ],
