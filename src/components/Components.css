@@ -11,5 +11,9 @@
 .home{
     display: grid;
     grid-template-columns: repeat(3,calc(100vw/3));
-
+}
+@media screen and (max-width: 767px) {
+    .home {
+        grid-template-columns: 100vw; /* Change to a single column layout for mobile screens */
+    }
 }

@@ -14,8 +14,8 @@
     },
     {
       "src": "banner.webp",
-      "type": "image/png",
-      "sizes": "512x512"
+      "type": "image/webp",
+      "sizes": "1024x1024"
     }
   ],
   "start_url": ".",
