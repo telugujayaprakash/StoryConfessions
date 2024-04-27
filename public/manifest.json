@@ -3,18 +3,18 @@
   "name": "A place where you can find hearttouching stories",
   "icons": [
     {
-      "src": "favicon.ico",
+      "src": "icoon.png",
       "sizes": "64x64 32x32 24x24 16x16",
-      "type": "image/x-icon"
+      "type": "image/png"
     },
     {
-      "src": "icoon.svg",
-      "type": "image/svg",
+      "src": "icoon.png",
+      "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "banner.webp",
-      "type": "image/webp",
+      "src": "icoon.png",
+      "type": "image/png",
       "sizes": "1024x1024"
     }
   ],
