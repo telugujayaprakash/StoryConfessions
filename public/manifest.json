@@ -3,17 +3,17 @@
   "name": "A place where you can find hearttouching stories",
   "icons": [
     {
-      "src": "icoon.png",
+      "src": "icc.png",
       "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/png"
     },
     {
-      "src": "icoon.png",
+      "src": "icc.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "icoon.png",
+      "src": "icc.png",
       "type": "image/png",
       "sizes": "1024x1024"
     }
