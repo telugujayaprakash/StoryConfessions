@@ -1,21 +1,21 @@
 {
-  "short_name": "Storyboard",
-  "name": "A place where you can find hearttouching stories",
+  "short_name": "TalesofTornado",
+  "name": "A place where you can find heart-touching stories",
   "icons": [
     {
-      "src": "icc.png",
+      "src": "favicon.ico",
       "sizes": "64x64 32x32 24x24 16x16",
-      "type": "image/png"
+      "type": "image/x-icon"
     },
     {
-      "src": "icc.png",
+      "src": "logo.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "icc.png",
+      "src": "logo.png",
       "type": "image/png",
-      "sizes": "1024x1024"
+      "sizes": "512x512"
     }
   ],
   "start_url": ".",
