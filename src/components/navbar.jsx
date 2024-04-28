@@ -14,7 +14,7 @@ function Navbar() {
                         <span class="ml-3 text-xl">Tailblocks</span>
                     </a> */}
                     <section className='title-font font-medium items-center text-white mb-4 md:mb-0'>
-                        <h4>Mystories</h4>
+                        <h4>TalesofTorrnado</h4>
                     </section>
                     <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
                         <Link to={'/'} className='mr-8 hover:text-white'>Home</Link>
