@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React, { useContext } from "react";
 import Hrr from '../assets/hrror.webp'
 import Kingdom from '../assets/kingdom.webp'
 import Psycho from '../assets/psycho.webp'
@@ -8,48 +8,55 @@ import Scifi from '../assets/sci-fi.webp'
 import { Link } from 'react-router-dom';
 import DataContext from '../context/DataContext';
 
-function Home() {
-    const {setcategory}=useContext(DataContext)
 
+function Home() {
+    const { setcategory } = useContext(DataContext)
+    console.log(setcategory)
     const totalCat = [
         {
-            title: "Horror",
+            title: "hrror",
             discription: "A genre that explores the darker side of human nature and the unknown, often with supernatural or psychological elements.",
-            category: "horror",
-            img:Hrr
+            category: "hrror",
+            img: Hrr,
+            
         },
         {
             title: "Kingdoms",
             discription: "A territory or state ruled by a monarch, often with a rich history, culture, and political intrigue.",
             category: "kingdom",
-            img:Kingdom
+            img: Kingdom,
+            
         },
         {
             title: "The Pychos",
             discription: "A psychological thriller film that delves into the mind of a disturbed character, exploring themes of identity, sanity, and violence.",
-            category: "pycho",
-            img:Psycho
+            category: "psyco",
+            img: Psycho,
+            
         },
         {
             title: "Romantic",
             discription: "A genre that celebrates love and relationships, often with a focus on emotion, passion, and connection.",
-            category: "romantic",
-            img:Romantic
+            category: "romance",
+            img: Romantic,
+            
         },
         {
             title: "Adventure",
             discription: "Exciting stories of daring, danger, and exploration, often in exotic locations.",
             category: "adventure",
-            img:Adven
+            img: Adven,
+            
         },
         {
             title: "Sci-fi",
             discription: "Imaginative stories exploring the possibilities of science and technology, often set in the future or in outer space.",
             category: "sci-fi",
-            img:Scifi
+            img: Scifi,
+            
         }
-
     ]
+    
     return (
         <><div className="home">
             {totalCat.map((c) => {
@@ -66,7 +73,7 @@ function Home() {
                                                 <h1 className="title-font text-lg font-medium text-white mb-3">{c.title}</h1>
                                                 <p className="leading-relaxed mb-3">{c.discription}</p>
                                                 <div className="flex items-center flex-wrap ">
-                                                    <Link to={'screens'}><span onClick={()=>{setcategory(c.category)}} className="text-indigo-400 inline-flex items-center md:mb-2 lg:mb-0">
+                                                    <Link to={'screens'}><span onClick={() => { setcategory(c.category)}} className="text-indigo-400 inline-flex items-center md:mb-2 lg:mb-0">
                                                         Learn More
                                                         <svg className="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
                                                             <path d="M5 12h14"></path>
@@ -91,7 +98,7 @@ function Home() {
                                 </div>
                             </div>
                         </section>
-                    
+
                     </>
                 )
             })}</div>
