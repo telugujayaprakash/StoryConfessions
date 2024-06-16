@@ -20,6 +20,7 @@ function Navbar() {
                         <Link to={'/'} className='mr-8 hover:text-white'>Home</Link>
                         <Link to={'About-Us'} className='mr-8 hover:text-white'>About Us</Link>
                         <Link to={'Contact'} className='mr-8 hover:text-white'>Contact</Link>
+                        {/* <Link to={'Upload'} className='mr-8 hover:text-white'>uplaod</Link> */}
                     </nav>
                 </div>
             </header><hr />

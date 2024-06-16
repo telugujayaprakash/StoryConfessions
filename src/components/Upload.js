@@ -1,10 +1,13 @@
 // App.js
 import React, { useState } from "react";
+import { useLocation } from 'react-router-dom';
 import { firestore, storage } from "./firebase";
 
 function Upload() {
   const [imageUrl, setImageUrl] = useState("");
   const [imageFile, setImageFile] = useState(null);
+  const location = useLocation();
+  const { stdata } = location.state || {};
 
   const handleImageUpload = async () => {
     if (imageFile) {
@@ -17,7 +20,7 @@ function Upload() {
       const url = await fileRef.getDownloadURL();
 
       // Update Firestore document with image URL
-      await firestore.collection("categories").doc("hrror").update({
+      await firestore.collection("horror").doc(stdata).update({
         imageUrl: url
       });
 
