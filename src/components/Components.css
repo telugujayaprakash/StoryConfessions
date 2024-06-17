@@ -188,15 +188,15 @@ button:hover #clip {
 }
 
 /* storypage */
-.pdf-container {
+/* .pdf-container {
   width: 100%;
-  max-width: 800px; /* Define your desired max width */
-  margin: 0 auto; /* Center the container horizontally */
-  border: 2px solid #e2e8f0; /* Tailwind gray-300 color */
+  max-width: 800px;
+  margin: 0 auto;
+  border: 2px solid #e2e8f0;
   background-color: #ffffff;
   padding: 1rem;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add box shadow for better visibility */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   position: relative;
   z-index: 1;
-}
+} */
 
