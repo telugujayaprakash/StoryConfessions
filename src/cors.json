@@ -1,6 +1,6 @@
 [
     {
-      "origin": ["http://localhost:3000"],
+      "origin": ["http://localhost:3000","https://talesoftornado.vercel.app"],
       "method": ["GET"],
       "maxAgeSeconds": 3600
     }
