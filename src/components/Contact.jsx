@@ -1,6 +1,7 @@
 import React, { useRef } from 'react'
 import emailjs from '@emailjs/browser';
 import { useState } from 'react';
+import './Components.css';
 
 function Contact() {
   const form = useRef();
@@ -29,7 +30,7 @@ function Contact() {
   return (
     <>
       <section class="text-gray-400 bg-gray-900 body-font relative"><hr />
-        <div class="container px-5 py-24 mx-auto">
+        <div class="container px-5 py-10 mx-auto">
           <div class="flex flex-col text-center w-full mb-12">
             <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-white">Contact Us</h1>
             <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Got something on your mind? Don't hesitate to reach out! Whether it's a query about our products, a partnership opportunity, or simply a friendly chat, we're here to listen. Fill out the form below and we'll be in touch promptly. Looking forward to connecting with you!.</p>
@@ -56,7 +57,7 @@ function Contact() {
                   </div>
                 </div>
                 <div class="p-2 w-full">
-                  <button style={{ backgroundColor: color }} class="flex mx-auto text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg" type="submit" value="Send">{ sent }</button>
+                  <button style={{ backgroundColor: color }} className="flex mx-auto text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg" type="submit" value="Send">{ sent }</button>
                 </div>
               </form>
               {/* <div class="p-2 w-full pt-8 mt-8 border-t border-gray-800 text-center">
