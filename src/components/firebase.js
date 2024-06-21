@@ -5,7 +5,14 @@ import "firebase/compat/storage";
 
 // Initialize Firebase
 const firebaseConfig = {
-    apiKey: "AIzaSyClF2OmV6OZlxQaKYhAbVqAqNHiFOpEGMM",
+    // apiKey: process.env.firebase_ApiKey,
+    // authDomain: process.env.firebase_authDomain,
+    // projectId: process.env.firebase_projectId,
+    // storageBucket: process.env.firebase_storageBucket,
+    // messagingSenderId: process.env.firebase_messagingSenderId,
+    // appId: process.env.firebase_appId,
+    // measurementId: process.env.firebase_measurementId
+    ApiKey: "AIzaSyClF2OmV6OZlxQaKYhAbVqAqNHiFOpEGMM",
     authDomain: "stories-23808.firebaseapp.com",
     projectId: "stories-23808",
     storageBucket: "stories-23808.appspot.com",
@@ -19,4 +26,4 @@ const storage = firebase.storage();
 
 const firestore = firebase.firestore();
 
-export { firestore ,storage};
+export { firestore, storage };
