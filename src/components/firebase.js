@@ -5,20 +5,13 @@ import "firebase/compat/storage";
 
 // Initialize Firebase
 const firebaseConfig = {
-    // apiKey: process.env.firebase_ApiKey,
-    // authDomain: process.env.firebase_authDomain,
-    // projectId: process.env.firebase_projectId,
-    // storageBucket: process.env.firebase_storageBucket,
-    // messagingSenderId: process.env.firebase_messagingSenderId,
-    // appId: process.env.firebase_appId,
-    // measurementId: process.env.firebase_measurementId
-    ApiKey: "AIzaSyClF2OmV6OZlxQaKYhAbVqAqNHiFOpEGMM",
-    authDomain: "stories-23808.firebaseapp.com",
-    projectId: "stories-23808",
-    storageBucket: "stories-23808.appspot.com",
-    messagingSenderId: "163562370047",
-    appId: "1:163562370047:web:017317bc4caa5918c6adca",
-    measurementId: "G-LXHNSM85M1"
+    apiKey: process.env.REACT_APP_firebase_ApiKey,
+    authDomain: process.env.REACT_APP_firebase_authDomain,
+    projectId: process.env.REACT_APP_firebase_projectId,
+    storageBucket: process.env.REACT_APP_firebase_storageBucket,
+    messagingSenderId: process.env.REACT_APP_firebase_messagingSenderId,
+    appId: process.env.REACT_APP_firebase_appId,
+    measurementId: process.env.REACT_APP_firebase_measurementId
 };
 
 firebase.initializeApp(firebaseConfig);

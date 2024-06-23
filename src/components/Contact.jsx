@@ -11,8 +11,8 @@ function Contact() {
     e.preventDefault();
     setSent('Loading...')
     emailjs
-      .sendForm('service_mgcebuk', 'template_tx1ha9c', form.current, {
-        publicKey: 'RZkl3DePKJf33q6qq',
+      .sendForm(process.env.REACT_APP_SERVICE_ID, process.env.REACT_APP_TEMPLATE_ID, form.current, {
+        publicKey: process.env.REACT_APP_PUBLIC_KEY,
       })
       .then(
         () => {
