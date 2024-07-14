@@ -1,0 +1,25 @@
+{
+  "short_name": "9tales",
+  "name": "A place where you can find heart-touching stories",
+  "icons": [
+    {
+      "src": "stylogo.png",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "stylogo.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "stylogo.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
