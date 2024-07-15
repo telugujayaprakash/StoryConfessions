@@ -81,38 +81,6 @@ const StoryUpload = () => {
         </>;
     }
 
-    //delete btn
-    const handleDeleteStory = async (storyId, category) => {
-        if (window.confirm("Are you sure you want to delete this story?")) {
-            try {
-                const storyRef = firestore.collection('categories').doc(category);
-
-                // Retrieve the document data
-                const doc = await storyRef.get();
-                const data = doc.data();
-
-                // Remove the story field from the data object
-                delete data[storyId];
-
-                // Update the document with the modified data
-                await storyRef.set(data);
-
-                // Remove the story from storage
-                const story = userStories.find(story => story.id === storyId && story.category === category);
-                if (story) {
-                    const imageRef = storage.refFromURL(story.image);
-                    const pdfRef = storage.refFromURL(story.pdf);
-                    await imageRef.delete();
-                    await pdfRef.delete();
-                }
-
-                setUserStories(userStories.filter(story => !(story.id === storyId && story.category === category)));
-            } catch (error) {
-                console.error("Error deleting story:", error);
-                alert("Error deleting story. Please try again.");
-            }
-        }
-    };
 
     const handleStoryUpload = async () => {
         if (userStories.length >= 10) {
@@ -237,12 +205,6 @@ const StoryUpload = () => {
                                         </a>
                                     </div>
                                 )}
-                                <button
-                                    onClick={() => handleDeleteStory(story.id, story.category)}
-                                    className="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded mt-2"
-                                >
-                                    Delete Story
-                                </button>
                             </div>
                         </li>
                     ))}
