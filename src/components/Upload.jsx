@@ -136,7 +136,7 @@ const StoryUpload = () => {
         }
     };
 
-    //to delete stories
+    //to delete stories from firebase
     const handleDeleteStory = async (storyId, category) => {
         if (window.confirm("Are you sure you want to delete this story?")) {
             try {
