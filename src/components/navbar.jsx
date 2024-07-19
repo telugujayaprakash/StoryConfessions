@@ -27,7 +27,7 @@ function Navbar({ onSearch }) {
             <header className="text-gray-400 bg-gray-900 body-font">
                 <div className="container mx-auto flex flex-wrap p-2 flex-col md:flex-row items-center">
                     <section className='title-font font-medium items-center text-white mb-4 md:mb-0'>
-                        <Link to={'/'} className='mr-8 hover:text-white'>Story Lines</Link>
+                        <Link to={'/'} className='mr-8 hover:text-white'>Story Confessions</Link>
                     </section>
                     <nav className="md:ml-auto flex flex-wrap items-center text-base justify-center">
                         {!isScreensPage && (
