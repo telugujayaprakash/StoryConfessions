@@ -2,6 +2,7 @@ import React from 'react';
 import { useAuth } from '../context/DataContextProvider';
 import './Components.css';
 import { useNavigate } from "react-router-dom";
+import g from '../assets/search.png';
 
 const Login = () => {
     const { loginWithGoogle, currentUser } = useAuth();
@@ -14,7 +15,7 @@ const Login = () => {
                      navigate("/")
             ) : (
                 <><h2>Login</h2>
-            <button onClick={loginWithGoogle}>Login with Google</button>
+            <button onClick={loginWithGoogle} className='flex'><img src={g} alt=""/> Login with Google</button>
             </>
             )}
         </div>

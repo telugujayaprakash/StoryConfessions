@@ -80,8 +80,14 @@ const StoryUpload = () => {
 
     if (!currentUser) {
         return <>
-            <p>Please login to upload stories.</p>
-            <button onClick={gotologin} style={{ backgroundColor: 'red', border: '2px solid red', borderRadius: '45%' }}>Login Page </button>
+        <div className="container mx-auto flex flex-col items-center">
+        <div className="mt-6 text-center">
+          <h3 className="text-2xl font-bold mb-2"><p>Please login to upload stories.</p></h3>
+          <p className="text-gray-400 text-sm"><button onClick={gotologin} style={{ backgroundColor: 'red', border: '2px solid red', borderRadius: '45%' }}>Login Page </button></p>
+        </div>
+      </div>
+            
+            
         </>;
     }
 
