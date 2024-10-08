@@ -1,0 +1,995 @@
+// const documentNames =totalCat.map(data => {
+        //     switch (data.category) {
+        //         case "hrror":
+        //             return "hrror";
+        //         case "kingdom":
+        //             return "kingdom";
+        //         case "pycho":
+        //             return "psyco";
+        //         case "romantic":
+        //             return "romance";
+        //         case "adventure":
+        //             return "adventure";
+        //         case "sci-fi":
+        //             return "sci-fi";
+        //         default:
+        //             return "hrror"; // Handle other cases if needed
+        //     }
+        // });
+        // setfirdoc(documentNames);
+        // to access all documents in the firebase collection
+// useEffect(() => {
+    //     const documentNames = totalCat.map(data => {
+    //         switch (data.category) {
+    //             case "hrror":
+    //                 return "hrror";
+    //             case "kingdom":
+    //                 return "kingdom";
+    //             case "pycho":
+    //                 return "psycho";
+    //             case "romantic":
+    //                 return "romance";
+    //             case "adventure":
+    //                 return "adventure";
+    //             case "sci-fi":
+    //                 return "sci-fi";
+    //             default:
+    //                 return "hrror"; // Handle other cases if needed
+    //         }
+    //     });
+    //     setfirdoc(documentNames);
+    // }, []);
+    // useEffect(() => {
+    //     const unsubscribe = firestore.collection("categories").doc(firdoc)
+    //         .onSnapshot((doc) => {
+    //             if (doc.exists) {
+    //                 setDocumentData({ id: doc.id, ...doc.data() });
+    //             } else {
+    //                 setDocumentData(null);
+    //             }
+    //         });
+    //     return () => {
+    //         unsubscribe();
+    //     };
+    // }, [firdoc]);
+    // useEffect(() => {
+    //     if (Array.isArray(firdoc)) {
+    //         // Iterate through each document name in the array
+    //         firdoc.forEach(docName => {
+    //             // Create a separate subscription for each document
+    //             const unsubscribe = firestore.collection("categories").doc(docName)
+    //                 .onSnapshot((doc) => {
+    //                     if (doc.exists) {
+    //                         // Handle the data for each document here
+    //                         setDocumentData({ id: doc.id, ...doc.data() });
+    //                         console.log(doc.id, "=>", doc.data());
+    //                     } else {
+    //                         // setDocumentData(null);
+    //                         console.log("No such document!");
+    //                     }
+    //                 });
+    
+    //             // Cleanup function to unsubscribe when component unmounts
+    //             return () => {
+    //                 unsubscribe();
+    //             };
+    //         });
+    //     }
+    // }, [firdoc]);
+    // Function to handle category selection
+
+    // console.log("firdoc:", firdoc);
+            // this code for rendering entire category
+            // .onSnapshot((snapshot) => {
+            //   const data = [];
+            //   snapshot.forEach((doc) => {
+            //     data.push({ id: doc.id, ...doc.data() });
+            //   });
+            //   setCollectionData(data);
+            // });
+            // this code for rendering for the collection inside documents
+
+// <img key={documentData.id} src={documentData.imageUrl} alt=""/>
+
+//
+    // useEffect(() => {
+    //     const unsubscribe = firestore.collection("categories").doc(firedoc)
+    //         .onSnapshot((doc) => {
+    //             if (doc.exists) {
+    //                 setDocumentData({ id: doc.id, ...doc.data() });
+    //             } else {
+    //                 setDocumentData(null);
+    //             }
+    //         });
+    //     return () => {
+    //         unsubscribe();
+    //     };
+    // }, [firedoc]);
+    // useEffect(() => {
+    //     const fetchCategoryData = async (category) => {
+    //         try {
+    //             const docRef = firestore.collection("categories").doc(category);
+    //             const doc = await docRef.get();
+    //             if (doc.exists) {
+                    // setDocumentData((prevData) => ({
+                    //     ...prevData,
+                    //     [category]: { id: doc.id, ...doc.data() }
+                    // }));
+    //             } else {
+    //                 setDocumentData((prevData) => ({
+    //                     ...prevData,
+    //                     [category]: null
+    //                 }));
+    //             }
+    //         } catch (error) {
+    //             console.error("Error fetching document:", error);
+    //             setDocumentData((prevData) => ({
+    //                 ...prevData,
+    //                 [category]: null
+    //             }));
+    //         }
+    //     };
+
+    //     fetchCategoryData(firedoc);
+    // }, [firedoc]);
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+//screen page btn to enter into story page
+{/* <button
+                                            className="text-gray-500 inline-flex items-center leading-none text-sm"
+                                            onClick={() => handleNavigate(value)}
+                                        >
+                                            <span className="text-gray-500 mr-3 inline-flex items-center leading-none text-sm pr-3 py-1 border-r-2 border-gray-800">
+                                                <svg className="w-4 h-4 mr-1" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24">
+                                                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                                                    <circle cx="12" cy="12" r="3"></circle>
+                                                </svg>1.2K
+                                            </span>
+                                            <span className="text-gray-500 inline-flex items-center leading-none text-sm">
+                                                <svg className="w-4 h-4 mr-1" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24">
+                                                    <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
+                                                </svg>
+                                            </span>
+                                        </button> */}
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+*****search box in navbar implementation**************
+// import './Components.css';
+// import React, { useContext, useState, useEffect } from "react";
+// import { useNavigate } from "react-router-dom";
+// import DataContext from '../context/DataContext';
+// import { firestore } from "./firebase";
+
+// function Screens() {
+//     const navigate = useNavigate();
+//     const { categories } = useContext(DataContext);
+//     const [documentData, setDocumentData] = useState(null);
+
+//     useEffect(() => {
+//         const fetchCategoryData = async () => {
+//             try {
+//                 const docRef = firestore.collection("categories").doc(categories);
+//                 const doc = await docRef.get();
+//                 if (doc.exists) {
+//                     setDocumentData(doc.data());
+//                 } else {
+//                     setDocumentData(null);
+//                 }
+//             } catch (error) {
+//                 console.error("Error fetching document:", error);
+//                 setDocumentData(null);
+//             }
+//         };
+//         fetchCategoryData();
+//     }, [categories]);
+
+//     const handleNavigate = (value) => {
+//         navigate("/Storypage", { state: { stdata: value } });
+//     };
+
+//     return (
+//         <section className="text-gray-400 bg-gray-900 body-font">
+//             <h5 className=" text-white mb-4 md:mb-0">👉{categories}</h5>
+//             <div className="container px-5 py-20 mx-auto">
+//                 <div className="flex flex-wrap -m-4">
+//                     {documentData ? (
+//                         Object.entries(documentData).map(([key, value]) => (
+//                             <div className="p-4" key={key}>
+//                                 <div className="h-full border-2 border-gray-800 rounded-lg overflow-hidden">
+//                                     <img className="lg:h-48 md:h-36 w-full object-cover object-center" src={''} alt="blog" />
+//                                     <div className="p-6">
+//                                         {/* <h2 className="tracking-widest text-xs title-font font-medium text-gray-500 mb-1">CATEGORY</h2> */}
+//                                         {/* <h1 className="title-font text-lg font-medium text-white mb-3">{categories}</h1> */}
+//                                         <p className="leading-relaxed mb-3 text-center">{value}</p>
+//                                         <button onClick={() => handleNavigate(value)}>
+//                                             R E A D-N O W
+//                                             <div id="clip">
+//                                                 <div id="leftTop" class="corner"></div>
+//                                                 <div id="rightBottom" class="corner"></div>
+//                                                 <div id="rightTop" class="corner"></div>
+//                                                 <div id="leftBottom" class="corner"></div>
+//                                             </div>
+//                                             <span id="rightArrow" class="arrow"></span>
+//                                             <span id="leftArrow" class="arrow"></span>
+//                                         </button>
+//                                     </div>
+//                                 </div>
+//                             </div>
+//                         ))
+//                     ) : (
+//                         <p className="leading-relaxed mb-3">Loading...</p>
+//                     )}
+//                 </div>
+//             </div>
+//         </section>
+//     );
+// }
+
+// export default Screens;
+
+//
+
+// import './Components.css';
+// import React, { useContext, useState, useEffect } from "react";
+// import { useNavigate } from "react-router-dom";
+// import DataContext from '../context/DataContext';
+// import { firestore } from "./firebase";
+// import Navbar from './navbar'; // Import Navbar component
+
+// function Screens() {
+//     const navigate = useNavigate();
+//     const { categories } = useContext(DataContext);
+//     const [documentData, setDocumentData] = useState(null);
+//     const [searchResult, setSearchResult] = useState(null);
+//     const [notFound, setNotFound] = useState(false);
+
+//     useEffect(() => {
+//         const fetchCategoryData = async () => {
+//             try {
+//                 const docRef = firestore.collection("categories").doc(categories);
+//                 const doc = await docRef.get();
+//                 if (doc.exists) {
+//                     setDocumentData(doc.data());
+//                 } else {
+//                     setDocumentData(null);
+//                 }
+//             } catch (error) {
+//                 console.error("Error fetching document:", error);
+//                 setDocumentData(null);
+//             }
+//         };
+//         fetchCategoryData();
+//     }, [categories]);
+
+//     const handleNavigate = (value) => {
+//         navigate("/Storypage", { state: { stdata: value } });
+//     };
+
+//     const handleSearch = (searchTerm) => {
+//         if (!searchTerm) {
+//             setSearchResult(null);
+//             setNotFound(false);
+//             return;
+//         }
+
+//         if (documentData) {
+//             const result = Object.entries(documentData).find(([key, value]) =>
+//                 value.toLowerCase().includes(searchTerm.toLowerCase())
+//             );
+//             if (result) {
+//                 setSearchResult(result[1]);
+//                 setNotFound(false);
+//             } else {
+//                 setSearchResult(null);
+//                 setNotFound(true);
+//             }
+//         }
+//     };
+
+//     return (
+//         <>
+//             <Navbar onSearch={handleSearch}/> {/* Pass handleSearch to Navbar */}
+//             <section className="text-gray-400 bg-gray-900 body-font">
+//                 <h5 className=" text-white mb-4 md:mb-0">👉{categories}</h5>
+//                 <div className="container px-5 py-20 mx-auto">
+//                     <div className="flex flex-wrap -m-4">
+//                         {searchResult ? (
+//                             <div className="p-4">
+//                                 <div className="h-full border-2 border-gray-800 rounded-lg overflow-hidden">
+//                                     <img className="lg:h-48 md:h-36 w-full object-cover object-center" src={''} alt="blog" />
+//                                     <div className="p-6">
+//                                         <p className="leading-relaxed mb-3 text-center">{searchResult}</p>
+//                                         <button onClick={() => handleNavigate(searchResult)}>
+//                                             R E A D-N O W
+//                                             <div id="clip">
+//                                                 <div id="leftTop" className="corner"></div>
+//                                                 <div id="rightBottom" className="corner"></div>
+//                                                 <div id="rightTop" className="corner"></div>
+//                                                 <div id="leftBottom" className="corner"></div>
+//                                             </div>
+//                                             <span id="rightArrow" className="arrow"></span>
+//                                             <span id="leftArrow" className="arrow"></span>
+//                                         </button>
+//                                     </div>
+//                                 </div>
+//                             </div>
+//                         ) : notFound ? (
+//                             <p className="leading-relaxed mb-3">Not found</p>
+//                         ) : documentData ? (
+//                             Object.entries(documentData).map(([key, value]) => (
+//                                 <div className="p-4" key={key}>
+//                                     <div className="h-full border-2 border-gray-800 rounded-lg overflow-hidden">
+//                                         <img className="lg:h-48 md:h-36 w-full object-cover object-center" src={''} alt="blog" />
+//                                         <div className="p-6">
+//                                             <p className="leading-relaxed mb-3 text-center">{value}</p>
+//                                             <button onClick={() => handleNavigate(value)}>
+//                                                 R E A D-N O W
+//                                                 <div id="clip">
+//                                                     <div id="leftTop" className="corner"></div>
+//                                                     <div id="rightBottom" className="corner"></div>
+//                                                     <div id="rightTop" className="corner"></div>
+//                                                     <div id="leftBottom" className="corner"></div>
+//                                                 </div>
+//                                                 <span id="rightArrow" className="arrow"></span>
+//                                                 <span id="leftArrow" className="arrow"></span>
+//                                             </button>
+//                                         </div>
+//                                     </div>
+//                                 </div>
+//                             ))
+//                         ) : (
+//                             <p className="leading-relaxed mb-3">Loading...</p>
+//                         )}
+//                     </div>
+//                 </div>
+//             </section>
+//         </>
+//     );
+// }
+
+// export default Screens;
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^$
+#########imp screen####################################
+// import React, { useContext, useState, useEffect } from "react";
+// import { useNavigate } from "react-router-dom";
+// // import Hrr from '../assets/hrror.webp'
+// // import Kingdom from '../assets/kingdom.webp'
+// // import Psycho from '../assets/psycho.webp'
+// // import Romantic from '../assets/romantic.webp'
+// // import Adven from '../assets/adven.webp'
+// // import Scifi from '../assets/sci-fi.webp'
+// import { Link } from 'react-router-dom';
+// import DataContext from '../context/DataContext';
+// import { firestore } from "./firebase";
+// function Screens() {
+//     const navigate = useNavigate();
+//     function handleClick() {
+//         navigate("/Storypage");
+//       }
+//     const { categories} = useContext(DataContext);
+//     const [documentData, setDocumentData] = useState(null);
+
+//     useEffect(() => {
+//         const fetchCategoryData = async (category) => {
+//             try {
+//                 const docRef = firestore.collection("categories").doc(category);
+//                 const doc = await docRef.get();
+//                 if (doc.exists) {
+//                     setDocumentData(doc.data());
+//                 } else {
+//                     setDocumentData(null);
+//                 }
+//             } catch (error) {
+//                 console.error("Error fetching document:", error);
+//                 setDocumentData(null);
+//             }
+//         };
+//         fetchCategoryData(categories);
+//     }, [categories]);
+
+//     return (
+//             <section className="text-gray-400 bg-gray-900 body-font" onClick={handleClick}>
+//             <div className="container px-5 py-20 mx-auto">
+//                 <div className="flex flex-wrap -m-4">
+//                     {documentData ? (
+//                         Object.entries(documentData).map(([key, value]) => (
+//                             <div className="p-4" key={key}>
+//                                 <div className="h-full border-2 border-gray-800 rounded-lg overflow-hidden">
+//                                     <img className="lg:h-48 md:h-36 w-full object-cover object-center" src={''} alt="blog" />
+//                                     <div className="p-6">
+//                                         <h2 className="tracking-widest text-xs title-font font-medium text-gray-500 mb-1">CATEGORY</h2>
+//                                         <h1 className="title-font text-lg font-medium text-white mb-3">{categories}</h1>
+//                                         <p className="leading-relaxed mb-3">{value}</p>
+//                                         <Link to={{pathname:'Storypage',state: { data: value }}}>
+//                                                 <span className="text-gray-500 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-800">
+//                                                     <svg className="w-4 h-4 mr-1" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24">
+//                                                         <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+//                                                         <circle cx="12" cy="12" r="3"></circle>
+//                                                     </svg>1.2K
+//                                                 </span>
+//                                                 <span className="text-gray-500 inline-flex items-center leading-none text-sm">
+//                                                     <svg className="w-4 h-4 mr-1" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24">
+//                                                         <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
+//                                                     </svg>
+//                                                 </span>
+//                                             </Link>
+//                                         {/* <div className="flex items-center flex-wrap">
+//                                             <span className="text-gray-500 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-800">
+//                                                 <svg className="w-4 h-4 mr-1" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24">
+//                                                     <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+//                                                     <circle cx="12" cy="12" r="3"></circle>
+//                                                 </svg>1.2K
+//                                             </span>
+//                                             <span className="text-gray-500 inline-flex items-center leading-none text-sm">
+//                                                 <svg className="w-4 h-4 mr-1" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24">
+//                                                     <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
+//                                                 </svg>
+//                                             </span>
+//                                         </div> */}
+//                                     </div>
+//                                 </div>
+//                             </div>
+//                         ))
+//                     ) : (
+//                         <p className="leading-relaxed mb-3">Loading...</p>
+//                     )}
+//                 </div>
+//             </div>
+//         </section>
+//     );
+// }
+
+// export default Screens;
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+as per 12/02/2024 // before adding image
+// import './Components.css';
+// import React, { useContext, useState, useEffect } from "react";
+// import { useNavigate } from "react-router-dom";
+// import DataContext from '../context/DataContext';
+// import { firestore } from "./firebase";
+// import SearchBox from './Search'; // Import the SearchBox component
+
+// function Screens() {
+//     const navigate = useNavigate();
+//     const { categories } = useContext(DataContext);
+//     const [documentData, setDocumentData] = useState(null);
+//     const [searchResults, setSearchResults] = useState([]);
+//     const [notFound, setNotFound] = useState(false);
+
+//     useEffect(() => {
+//         const fetchCategoryData = async () => {
+//             try {
+//                 const docRef = firestore.collection("categories").doc(categories);
+//                 const doc = await docRef.get();
+//                 if (doc.exists) {
+//                     setDocumentData(doc.data());
+//                 } else {
+//                     setDocumentData(null);
+//                 }
+//             } catch (error) {
+//                 console.error("Error fetching document:", error);
+//                 setDocumentData(null);
+//             }
+//         };
+//         fetchCategoryData();
+//     }, [categories]);
+
+//     const handleNavigate = (value) => {
+//         navigate("/Storypage", { state: { stdata: value } });
+//     };
+
+//     const handleSearch = (searchTerm) => {
+//         if (!searchTerm) {
+//             setSearchResults([]);
+//             setNotFound(false);
+//             return;
+//         }
+
+//         if (documentData) {
+//             const results = Object.entries(documentData).filter(([key, value]) =>
+//                 value.toLowerCase().includes(searchTerm.toLowerCase())
+//             ).map(([key, value]) => value);
+
+//             if (results.length > 0) {
+//                 setSearchResults(results);
+//                 setNotFound(false);
+//             } else {
+//                 setSearchResults([]);
+//                 setNotFound(true);
+//             }
+//         }
+//     };
+
+//     return (
+//         <section className="text-gray-400 bg-gray-900 body-font">
+//             {/* <SearchBox onSearch={handleSearch} /> Add the SearchBox component */}
+//             <p className="md:ml-auto flex flex-wrap items-center text-base justify-center"><SearchBox onSearch={handleSearch} /></p>
+//             <div className="container px-5 py-10 mx-auto">
+//                 <div className="flex flex-wrap -m-4">
+//                     {searchResults.length > 0 ? (
+//                         searchResults.map((result, index) => (
+//                             <div className="p-4" key={index}>
+//                                 <div className="h-full border-2 border-gray-800 rounded-lg overflow-hidden">
+//                                     <img className="lg:h-48 md:h-36 w-full object-cover object-center" src={''} alt="blog" />
+//                                     <div className="p-6">
+//                                         <p className="leading-relaxed mb-3 text-center">{result}</p>
+//                                         <button onClick={() => handleNavigate(result)}>
+//                                             R E A D-N O W
+//                                             <div id="clip">
+//                                                 <div id="leftTop" className="corner"></div>
+//                                                 <div id="rightBottom" className="corner"></div>
+//                                                 <div id="rightTop" className="corner"></div>
+//                                                 <div id="leftBottom" className="corner"></div>
+//                                             </div>
+//                                             <span id="rightArrow" className="arrow"></span>
+//                                             <span id="leftArrow" className="arrow"></span>
+//                                         </button>
+//                                     </div>
+//                                 </div>
+//                             </div>
+//                         ))
+//                     ) : notFound ? (
+//                         <p className="leading-relaxed mb-3">Not found</p>
+//                     ) : documentData ? (
+//                         Object.entries(documentData).map(([key, value]) => (
+//                             <div className="p-4" key={key}>
+//                                 <div className="h-full border-2 border-gray-800 rounded-lg overflow-hidden">
+//                                     <img className="lg:h-48 md:h-36 w-full object-cover object-center" src={''} alt="blog" />
+//                                     <div className="p-6">
+//                                         <p className="leading-relaxed mb-3 text-center">{value}</p>
+//                                         <button onClick={() => handleNavigate(value)}>
+//                                             R E A D-N O W
+//                                             <div id="clip">
+//                                                 <div id="leftTop" className="corner"></div>
+//                                                 <div id="rightBottom" className="corner"></div>
+//                                                 <div id="rightTop" className="corner"></div>
+//                                                 <div id="leftBottom" className="corner"></div>
+//                                             </div>
+//                                             <span id="rightArrow" className="arrow"></span>
+//                                             <span id="leftArrow" className="arrow"></span>
+//                                         </button>
+//                                     </div>
+//                                 </div>
+//                             </div>
+//                         ))
+//                     ) : (
+//                         <p className="leading-relaxed mb-3">Loading...</p>
+//                     )}
+//                 </div>
+//             </div>
+//         </section>
+//     );
+// }
+
+// export default Screens;
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+recent screen page 14/07/24
+// import './Components.css';
+// import React, { useContext, useState, useEffect } from "react";
+// import { useNavigate } from "react-router-dom";
+// import DataContext from '../context/DataContext';
+// import { firestore } from "./firebase";
+// import SearchBox from './Search'; // Import the SearchBox component
+
+// function Screens() {
+//     const navigate = useNavigate();
+//     const { categories } = useContext(DataContext);
+//     const [stories, setStories] = useState([]);
+//     const [searchResults, setSearchResults] = useState([]);
+//     const [notFound, setNotFound] = useState(false);
+
+//     useEffect(() => {
+//         const fetchCategoryData = async () => {
+//             try {
+//                 const categoryRef = firestore.collection("categories").doc(categories);
+//                 const doc = await categoryRef.get();
+
+//                 if (doc.exists) {
+//                     const data = doc.data();
+//                     const storyEntries = Object.entries(data).map(([key, value]) => ({
+//                         key,
+//                         name: value.name || "Untitled",
+//                         image: value.image || ""
+//                     }));
+
+//                     setStories(storyEntries);
+//                 } else {
+//                     setStories([]);
+//                 }
+//             } catch (error) {
+//                 console.error("Error fetching document:", error);
+//                 setStories([]);
+//             }
+//         };
+
+//         fetchCategoryData();
+//     }, [categories]);
+
+//     const handleNavigate = (name) => {
+//         navigate("/Storypage", { state: { stdata: name } });
+//     };
+
+//     const handleSearch = (searchTerm) => {
+//         if (!searchTerm) {
+//             setSearchResults([]);
+//             setNotFound(false);
+//             return;
+//         }
+
+//         const results = stories.filter(({ name }) =>
+//             name && name.toLowerCase().includes(searchTerm.toLowerCase())
+//         );
+
+//         if (results.length > 0) {
+//             setSearchResults(results);
+//             setNotFound(false);
+//         } else {
+//             setSearchResults([]);
+//             setNotFound(true);
+//         }
+//     };
+
+//     return (
+//         <section className="text-gray-400 bg-gray-900 body-font">
+//             <p className="md:ml-auto flex flex-wrap items-center text-base justify-center">
+//                 <SearchBox onSearch={handleSearch} />
+//             </p>
+//             <div className="container px-5 py-10 mx-auto">
+//                 <div className="flex flex-wrap -m-4">
+//                     {searchResults.length > 0 ? (
+//                         searchResults.map(({ key, name, image }) => (
+//                             <div className="p-4" key={key}>
+//                                 <div className="h-full border-2 border-gray-800 rounded-lg overflow-hidden">
+//                                     <img className="lg:h-48 md:h-36 w-full object-cover object-center" src={image} alt={name} />
+//                                     <div className="p-6">
+//                                         <p className="leading-relaxed mb-3 text-center">{name}</p>
+//                                         <button onClick={() => handleNavigate({ name, image })}>
+//                                             R E A D-N O W
+//                                             <div id="clip">
+//                                                 <div id="leftTop" className="corner"></div>
+//                                                 <div id="rightBottom" className="corner"></div>
+//                                                 <div id="rightTop" className="corner"></div>
+//                                                 <div id="leftBottom" className="corner"></div>
+//                                             </div>
+//                                             <span id="rightArrow" className="arrow"></span>
+//                                             <span id="leftArrow" className="arrow"></span>
+//                                         </button>
+//                                     </div>
+//                                 </div>
+//                             </div>
+//                         ))
+//                     ) : notFound ? (
+//                         <p className="leading-relaxed mb-3">Not found</p>
+//                     ) : stories.length > 0 ? (
+//                         stories.map(({ key, name, image }) => (
+//                             <div className="p-4" key={key}>
+//                                 <div className="h-full border-2 border-gray-800 rounded-lg overflow-hidden">
+//                                     <img className="lg:h-48 md:h-36 w-full object-cover object-center" src={image} alt={name} />
+//                                     <div className="p-6">
+//                                         <p className="leading-relaxed mb-3 text-center">{name}</p>
+//                                         <button onClick={() => handleNavigate(name)}>
+//                                             R E A D-N O W
+//                                             <div id="clip">
+//                                                 <div id="leftTop" className="corner"></div>
+//                                                 <div id="rightBottom" className="corner"></div>
+//                                                 <div id="rightTop" className="corner"></div>
+//                                                 <div id="leftBottom" className="corner"></div>
+//                                             </div>
+//                                             <span id="rightArrow" className="arrow"></span>
+//                                             <span id="leftArrow" className="arrow"></span>
+//                                         </button>
+//                                     </div>
+//                                 </div>
+//                             </div>
+//                         ))
+//                     ) : (
+//                         <p className="leading-relaxed mb-3">Loading...</p>
+//                     )}
+//                 </div>
+//             </div>
+//         </section>
+//     );
+// }
+
+// export default Screens;
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+before delete btn
+// import React, { useState, useEffect } from 'react';
+// import { firestore, storage } from './firebase'; // Ensure Firebase is properly configured
+// import './Components.css';
+// import { useAuth } from '../context/DataContextProvider';
+// import { useNavigate } from "react-router-dom";
+
+// const StoryUpload = () => {
+//     const { currentUser } = useAuth();
+//     const navigate = useNavigate();
+//     const [pdfFile, setPdfFile] = useState(null);
+//     const [selectedCategory, setSelectedCategory] = useState('');
+//     const [availableCategories, setAvailableCategories] = useState([]);
+//     const [storyName, setStoryName] = useState('');
+//     const [storyImage, setStoryImage] = useState(null);
+//     const [uploading, setUploading] = useState(false);
+//     const [error, setError] = useState('');
+//     const [success, setSuccess] = useState(false);
+//     const [userStories, setUserStories] = useState([]); // Add state for user stories
+
+//     useEffect(() => {
+//         const fetchAvailableCategories = async () => {
+//             try {
+//                 const collectionRef = firestore.collection('categories');
+//                 const snapshot = await collectionRef.get();
+//                 const docs = snapshot.docs.map(doc => doc.id);
+//                 setAvailableCategories(docs);
+//             } catch (error) {
+//                 console.error("Error fetching categories:", error);
+//             }
+//         };
+
+//         fetchAvailableCategories();
+//     }, []);
+
+//     useEffect(() => {
+//         const fetchUserStories = async () => {
+//             if (currentUser) {
+//                 try {
+//                     const categoriesRef = firestore.collection('categories');
+//                     const snapshot = await categoriesRef.get();
+//                     const stories = [];
+
+//                     snapshot.forEach(doc => {
+//                         const categoryStories = doc.data();
+//                         for (const [key, value] of Object.entries(categoryStories)) {
+//                             if (value.userId === currentUser.uid) {
+//                                 stories.push({ id: key, category: doc.id, ...value });
+//                             }
+//                         }
+//                     });
+
+//                     setUserStories(stories);
+//                 } catch (error) {
+//                     console.error("Error fetching user stories:", error);
+//                 }
+//             }
+//         };
+
+//         fetchUserStories();
+//     }, [currentUser, success]); // Fetch user stories on mount and after a successful upload
+
+
+//     const handleFileChange = (e) => {
+//         if (e.target.files[0]) {
+//             setPdfFile(e.target.files[0]);
+//         }
+//     };
+
+//     const handleImageChange = (e) => {
+//         if (e.target.files[0]) {
+//             setStoryImage(e.target.files[0]);
+//         }
+//     };
+//     const gotologin = () => {
+//         navigate("/login");
+//     }
+
+//     if (!currentUser) {
+//         return <>
+//             <p>Please login to upload stories.</p>
+//             <button onClick={gotologin} style={{ backgroundColor: 'red', border: '2px solid red', borderRadius: '45%' }}>Login Page </button>
+//         </>;
+//     }
+
+//     const handleStoryUpload = async () => {
+//         if (userStories.length >= 10) {
+//             alert("You have reached the limit of 10 stories. Please contact developer.");
+//             return;
+//         }
+
+//         if (!storyName || !storyImage || !pdfFile || !selectedCategory) {
+//             setError("Please fill in all fields and upload all files.");
+//             return;
+//         }
+
+//         setUploading(true);
+//         setError('');
+//         setSuccess(false);
+
+//         try {
+//             const storageRef = storage.ref();
+
+//             // Upload story image
+//             const imageRef = storageRef.child(`/${selectedCategory}/${storyImage.name}`);
+//             await imageRef.put(storyImage);
+//             const imageUrl = await imageRef.getDownloadURL();
+
+//             // Upload PDF file
+//             const fileRef = storageRef.child(`/${selectedCategory}/${pdfFile.name}`);
+//             await fileRef.put(pdfFile);
+//             const fileUrl = await fileRef.getDownloadURL();
+
+//             // Prepare story details
+//             const storyData = {
+//                 name: storyName,
+//                 image: imageUrl,
+//                 pdf: fileUrl,
+//                 userId: currentUser.uid,
+//             };
+
+//             // Save story details in the 'categories' collection
+//             await firestore.collection('categories').doc(selectedCategory).update({
+//                 [storyName]: storyData
+//             });
+
+//             setSuccess(true);
+//             setStoryName('');
+//             setStoryImage(null);
+//             setPdfFile(null);
+//             setSelectedCategory('');
+//         } catch (error) {
+//             console.error("Error uploading story details:", error);
+//             setError("Error uploading story details.");
+//         } finally {
+//             setUploading(false);
+//         }
+//     };
+
+//     return (
+//         <div className="container mx-auto py-10">
+//             <h1 className="text-4xl font-bold mb-4">Upload Your Story</h1>
+//             {error && <p className="text-red-500">{error}</p>}
+//             {success && <p className="text-green-500">Story uploaded successfully!</p>}
+
+//             <div className="mb-4">
+//                 <select
+//                     value={selectedCategory}
+//                     onChange={(e) => setSelectedCategory(e.target.value)}
+//                     className="mb-4 p-2 border border-gray-300 rounded"
+//                 >
+//                     <option value="" disabled>Select Category</option>
+//                     {availableCategories.map(cat => (
+//                         <option key={cat} value={cat}>{cat}</option>
+//                     ))}
+//                 </select>
+//             </div>
+//             <div className="mb-4">
+//                 <input
+//                     type="text"
+//                     value={storyName}
+//                     onChange={(e) => setStoryName(e.target.value)}
+//                     placeholder="Story Name"
+//                     className="mb-4 p-2 border border-gray-300 rounded"
+//                 />
+//             </div>
+//             <div className="mb-4">
+//                 <input
+//                     type="file"
+//                     accept="image/*"
+//                     onChange={handleImageChange}
+//                     className="mb-4"
+//                 />
+//             </div>
+//             <div className="mb-4">
+//                 <input
+//                     type="file"
+//                     accept=".pdf"
+//                     onChange={handleFileChange}
+//                     className="mb-4"
+//                 />
+//             </div>
+//             <button
+//                 onClick={handleStoryUpload}
+//                 disabled={uploading}
+//                 className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+//             >
+//                 {uploading ? "Uploading..." : "Upload Story"}
+//             </button>
+
+//             {/* Render user uploaded stories */}
+//             <h2 className="text-3xl font-bold mb-4 mt-10">Your Uploaded Stories</h2>
+//             {userStories.length > 0 ? (
+//                 <ul>
+//                     {userStories.map(story => (
+//                         <li key={story.id} className="mb-4">
+//                             <div>
+//                                 <h3 className="text-2xl">{story.name}</h3>
+//                                 <img src={story.image} alt={story.name} className="w-32 h-32 object-cover" />
+//                                 {story.pdf && (
+//                                     <div>
+//                                         <a href={story.pdf} target="_blank" rel="noopener noreferrer" className="text-blue-500">
+//                                             View PDF
+//                                         </a>
+//                                     </div>
+//                                 )}
+//                             </div>
+//                         </li>
+//                     ))}
+//                 </ul>
+//             ) : (
+//                 <p>No stories uploaded yet.</p>
+//             )}
+//         </div>
+//     );
+// };
+
+// export default StoryUpload;
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^66
+storypage code on 15/07/24
+// import React, { useState, useEffect } from 'react';
+// import { useLocation } from 'react-router-dom';
+// import './Components.css';
+// import { Document, Page, pdfjs } from 'react-pdf';
+// pdfjs.GlobalWorkerOptions.workerSrc = `//unpkg.com/pdfjs-dist@${pdfjs.version}/build/pdf.worker.min.mjs`;
+
+// const StoryPage = () => {
+//     const location = useLocation();
+//     const { story } = location.state || {};
+//     const [documentData, setDocumentData] = useState(null);
+//     const [loading, setLoading] = useState(true);
+//     const [numPages, setNumPages] = useState(null);
+//     const [pageNum, setPageNum] = useState(1);
+
+//     useEffect(() => {
+//         if (story) {
+//             setDocumentData(story);
+//             setLoading(false);
+//         } else {
+//             setDocumentData(null);
+//             setLoading(false);
+//         }
+//     }, [story]);
+
+//     if (loading) {
+//         return <p>Loading...</p>;
+//     }
+
+//     const onDocumentLoadSuccess = ({ numPages }) => {
+//         setNumPages(numPages);
+//     };
+
+//     const nextPage = () => {
+//         if (pageNum < numPages) {
+//             setPageNum(pageNum + 1);
+//         }
+//     };
+
+//     const prevPage = () => {
+//         if (pageNum > 1) {
+//             setPageNum(pageNum - 1);
+//         }
+//     };
+
+//     return (
+//         <div className="container mx-auto py-10">
+//             <h1 className="text-4xl font-bold mb-4">Story Page</h1>
+//             {documentData ? (
+//                 <div className="mb-4">
+//                     <div className="flex justify-center items-center flex-col">
+//                         <div className="pdf-container">
+//                             <Document file={documentData.pdf} onLoadSuccess={onDocumentLoadSuccess}>
+//                                 <Page pageNumber={pageNum} renderTextLayer={false} renderAnnotationLayer={false} />
+//                             </Document>
+//                         </div>
+//                         <div className="controls mb-4">
+//                             <button
+//                                 onClick={prevPage}
+//                                 disabled={pageNum === 1}
+//                                 className="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded-l disabled:opacity-50"
+//                             >
+//                                 Prev
+//                             </button>
+//                             <button
+//                                 onClick={nextPage}
+//                                 disabled={pageNum === numPages}
+//                                 className="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded-r disabled:opacity-50"
+//                             >
+//                                 Next
+//                             </button>
+//                         </div>
+//                     </div>
+//                 </div>
+//             ) : (
+//                 <p>No story data available.</p>
+//             )}
+//         </div>
+//     );
+// };
+
+// export default StoryPage;
